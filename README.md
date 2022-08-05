@@ -25,4 +25,8 @@ Attempting to reduce memory allocations during word processing.
   * 'quick' should be processed as both 'quick' and 'uick'.
   
 * Every word should be able to be retrieved as an exact match or a partial match.
-* Every word should be able to be retireved with no dependency on case.x
+* Every word should be able to be retireved with no dependency on case.
+
+## System Requirements
+
+* The code currently runs using .NET Frameowrk 4.7.2
