@@ -7,24 +7,15 @@ namespace SpanIt.Processors
     /*
 SpanIt.Processors.Original
 Iterations: 1000000
-Took: 23,953 ms
-Allocated: 15,984,446 kb
-Peak Working Set: 20,776 kb
+Took: 18,297 ms
+Allocated: 15,984,447 kb
+Peak Working Set: 20,420 kb
 Gen 0 collections: 2601
-Gen 1 collections: 2
+Gen 1 collections: 1
 Gen 2 collections: 0
      */
     public class Original : IWordProcessor
     {
-        private readonly IDictionary<string, byte> _index;
-        private readonly IDictionary<string, byte> _fullWordIndex;
-
-        internal Original()
-        {
-            _index = new ConcurrentDictionary<string, byte>();
-            _fullWordIndex = new ConcurrentDictionary<string, byte>();
-        }
-        
         public void Add(string words)
         {
             for (var i = 0; i < words.Length; ++i)
@@ -103,18 +94,16 @@ Gen 2 collections: 0
 
         private void AddToFullWordIndex(string word)
         {
-            if (!_fullWordIndex.ContainsKey(word.ToLower()))
-            {
-                _fullWordIndex[word.ToLower()] = 1;
-            }
+            var lower = word.ToLower();
+
+            // Add to index here.
         }
 
         private void AddToDictionary(string word)
         {
-            if (!_index.ContainsKey(word.ToLower()))
-            {
-                _index[word.ToLower()] = 1;
-            }
+            var lower = word.ToLower();
+            
+            // Add to index here.
         }
     }
 }
