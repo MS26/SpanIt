@@ -6,7 +6,7 @@ using System.Runtime.ConstrainedExecution;
 namespace SpanIt.Processors
 {
     /*
-SpanIt.Processors.Current
+SpanIt.Processors.ProcessorV2
 Iterations: 1000000
 Took: 2,750 ms
 Allocated: 16 kb
@@ -15,7 +15,7 @@ Gen 0 collections: 0
 Gen 1 collections: 0
 Gen 2 collections: 0
      */
-    public class Current : IWordProcessor
+    public class ProcessorV2 : IWordProcessor
     {
         private static readonly char CompleteWordIndicator = '^';
             

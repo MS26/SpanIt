@@ -16,8 +16,9 @@ namespace SpanIt
 
             var dict = new Dictionary<string, IWordProcessor>
             {
-                ["1"] = new Original(),
-                ["2"] = new Current(),
+                ["1"] = new ProcessorV1(),
+                ["2"] = new ProcessorV2(),
+                ["3"] = new ProcessorV3(),
             };
 
             if (args.Length > 0 && dict.ContainsKey(args[0]))

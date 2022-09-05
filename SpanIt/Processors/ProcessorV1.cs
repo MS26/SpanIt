@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace SpanIt.Processors
 {
     /*
-SpanIt.Processors.Original
+SpanIt.Processors.ProcessorV1
 Iterations: 1000000
 Took: 18,297 ms
 Allocated: 15,984,447 kb
@@ -14,7 +14,7 @@ Gen 0 collections: 2601
 Gen 1 collections: 1
 Gen 2 collections: 0
      */
-    public class Original : IWordProcessor
+    public class ProcessorV1 : IWordProcessor
     {
         public void Add(string words)
         {

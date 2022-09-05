@@ -65,8 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Processors\Original.cs" />
-    <Compile Include="Processors\Current.cs" />
+    <Compile Include="Processors\ProcessorV1.cs" />
+    <Compile Include="Processors\ProcessorV2.cs" />
+    <Compile Include="Processors\ProcessorV3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
